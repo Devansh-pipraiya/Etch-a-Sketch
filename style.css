@@ -1,0 +1,13 @@
+*{
+    outline: 1px solid black;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{ 
+    background-color: #202124;
+    font-family: 'Comic Sans MS', Verdana, sans-serif ;
+    display: flex;
+    color: #e8eaed;
+}
+/* accent colors #8ab4f8  #3ea6ff  */
