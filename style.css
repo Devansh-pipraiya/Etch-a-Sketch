@@ -33,7 +33,17 @@ body{
     aspect-ratio: 1/1;
     margin: 1rem;
     border: 5px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+
 }
+
+.grid{
+    outline: 1px dotted wheat;
+    aspect-ratio: 1/1;
+}
+
 
 
 
