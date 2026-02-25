@@ -43,6 +43,9 @@ body{
     outline: 1px dotted wheat;
     aspect-ratio: 1/1;
 }
+.white{
+    background-color: whitesmoke;
+}
 
 
 
