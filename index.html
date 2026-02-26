@@ -19,15 +19,22 @@
         <span>A</span>
     </div>
     <div id="main">
+        <button id="clear-grid">Clear Grid</button>
         <div id="button-container">
-            <button>Enter Grid</button>
-            <button>Clear Grid</button>
-            <button data-grid="8">8x8</button>
-            <button data-grid="16">16x16</button>
-            <button data-grid="20">20x20</button>
-            <button data-grid="25">25x25</button>
+            <button data-type ="color" class="color-button" style="background-color:#e8eaed;" data-color="#e8eaed"></button>
+            <button data-type ="color" class="color-button" style="background-color:#8ab4f8;" data-color="#8ab4f8"></button>
+            <button data-type ="color" class="color-button" style="background-color:#ff6b6b;" data-color="#ff6b6b"></button>
+            <button data-type ="color" class="color-button" style="background-color:#6bcf63;" data-color="#6bcf63"></button>
+            <button data-type ="color" class="color-button" style="background-color:#ffd166;" data-color="#ffd166"></button>
+            <button id="random-color-button">Random</button>
+            <button data-type ="custom-grid" id="custom-grid-button">Enter Custom Grid</button>
+            <button data-type ="grid" data-grid="7">7x7</button>
+            <button data-type ="grid" data-grid="8">8x8</button>
+            <button data-type ="grid" data-grid="10">10x10</button>
+            <button data-type ="grid" data-grid="25">25x25</button>
         </div>
         <div id="container" class="container"></div>
+        <button id="toggle-grid-line" data-property="outline = 1px dashed rgba(128, 128, 128, 20%);">Toggle Grid Line</button>
     </div>
     <div class="title">
         <span>S</span>
