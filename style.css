@@ -1,5 +1,5 @@
+/* ======== BASE RESET ======== */
 *{
-    /* outline: 1px solid white; */
     margin: 0;
     border: 0;
     box-sizing: border-box;
@@ -9,14 +9,13 @@ body{
     font-family: 'Comic Sans MS', Verdana, sans-serif ;
     display: flex;
     color: #e8eaed;
-    /* font-size: 2rem; */
 
     justify-content: center;
     align-items: center;
     height: 100vh;
     gap: 1.2rem;
 }
-
+/* MAIN LAYOUT */
 #main{   
     display: flex;
     flex-direction: column;
@@ -27,11 +26,19 @@ body{
     flex: 0 0 auto;
     height: 100vh;
 }
+/* VERTICAL TITLE */
+.title{
+    display:flex;
+    flex-direction: column;
+    font-size: 8vmin;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
 
+/* ======== SKETCH CONTAINER AND GRID ======== */
 .container{
     width: min(80vw, 80vh);
     aspect-ratio: 1/1;
-    /* margin: 1rem; */
     border: 5px solid gray;
     display: flex;
     flex-wrap: wrap;
@@ -42,34 +49,19 @@ body{
 .grid{
     aspect-ratio: 1/1;
 }
-.white{
-    background-color: whitesmoke;
-}
 .grid-line{
     outline: 1px dashed rgba(128, 128, 128, 25%);
 }
 
 
 
-
-.title{
-    display:flex;
-    flex-direction: column;
-    font-size: 8vmin;
-    color: transparent;
-    -webkit-text-stroke: 1px white;
-}
-
-.active{
-    background-color: #515257 ;
-}
-
-
+/*  ======== BUTTONS AND BUTTON CONTAINER ======== */
 button{
     background-color: #202124;
     color:#e8eaed;
-    padding: 6px;
+    padding: 0.2rem 0.4rem;
     cursor: pointer;
+    font-size: clamp(0.8rem, 1vw, 1.4rem);
 }
 button:hover{
     background-color: #515257;
@@ -80,29 +72,40 @@ button:active{
 }
 
 
+/* BUTTON GROUP CONTAINER */
 #button-container{
     display: flex;
     width: 100%;
     justify-content: center ;
+    flex-wrap: wrap;
 }
 
-#custom-grid-button{
-    margin: 0 auto;
-}
-
+/* SQUARE COLOR BUTTON */
 .color-button{
     aspect-ratio: 1/1;
-    width: 20px;
+    width: clamp(20px , 1.2vw, 45px);
 }
+
+/* RAINBOW EFFECT BORDER (RANDOM BUTTON) */
 #random-color-button{
     border: 2px solid transparent;
     border-image: linear-gradient(90deg, 
-        #ff6b6b, 
-        #ffd166,  
-        #6bcf63,  
-        #8ab4f8, 
-        #e8eaed   
+    #ff6b6b, 
+    #ffd166,  
+    #6bcf63,  
+    #8ab4f8, 
+    #e8eaed   
     );
     border-image-slice: 1;
-    /* padding: 10px 20px; */
+}
+
+/* FOR CENTERING USING MARGIN */
+#custom-grid-button{  
+    margin: 0 auto;  
+}
+
+
+/* FOR SETTING ACTIVE STATE OF BUTTON */
+.active{
+    background-color: #515257 ;
 }
